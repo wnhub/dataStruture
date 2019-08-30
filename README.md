@@ -22,6 +22,6 @@
   --遵循先入先出原则
   
   --示意图：
-  
+  ![Image text](https://raw.githubusercontent.com/wnhub/images/master/readme/%E9%98%9F%E5%88%97%E7%A4%BA%E6%84%8F%E5%9B%BE_meitu_1.jpg?token=AJNOIZ6IGH7A5FHPE4UAIMK5NC56E)
   
   
