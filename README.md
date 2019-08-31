@@ -25,6 +25,23 @@
   
     ![Image text](https://raw.githubusercontent.com/wnhub/images/master/readme/%E9%98%9F%E5%88%97%E7%A4%BA%E6%84%8F%E5%9B%BE_meitu_1.jpg?token=AJNOIZ3HW2O6UZEIAOAQHYC5NC6PM)
   
+    front=rear=-1;即最开始二者都指向队列的第一个元素之前
     front随着输出而变化；rear随着输入而变化；
     当front=rear时，队列为空。
   
+3、环形队列
+
+--①front指向队列第一个元素，初始值为0；
+
+  ②rear指向队列最后一个元素的后一个位置（作为预留空间，参考下图），初始值为0；
+  
+  ③队列空：   rear==front
+  
+  ④队列满：   (rear+1)% maxSize ==front
+  
+  ⑤队列中有效数据的个数：(rear+maxSize-front)%maxSize
+  
+
+--示意图：
+
+![Image text](https://github.com/wnhub/images/blob/master/readme/%E7%8E%AF%E5%BD%A2%E9%98%9F%E5%88%97.png）
