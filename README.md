@@ -23,7 +23,7 @@
   
   --示意图：
   
-    ![Image text](https://raw.githubusercontent.com/wnhub/images/master/readme/%E9%98%9F%E5%88%97%E7%A4%BA%E6%84%8F%E5%9B%BE_meitu_1.jpg?token=AJNOIZ3HW2O6UZEIAOAQHYC5NC6PM)
+    ![image](https://github.com/wnhub/images/blob/master/readme/20190830.jpg)
   
     front=rear=-1;即最开始二者都指向队列的第一个元素之前
     front随着输出而变化；rear随着输入而变化；
@@ -44,4 +44,4 @@
 
 --示意图：
 
-![Image text](https://raw.githubusercontent.com/wnhub/images/master/readme/%E7%8E%AF%E5%BD%A2%E9%98%9F%E5%88%97.png）
+![image](https://github.com/wnhub/images/blob/master/readme/%E7%8E%AF%E5%BD%A2%E9%98%9F%E5%88%97.png)
