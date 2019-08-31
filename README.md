@@ -22,8 +22,7 @@
   --遵循先入先出原则
   
   --示意图：
-  
-    ![image](https://github.com/wnhub/images/blob/master/readme/20190830.jpg)
+  ![image](https://github.com/wnhub/images/blob/master/readme/20190830.jpg)
   
     front=rear=-1;即最开始二者都指向队列的第一个元素之前
     front随着输出而变化；rear随着输入而变化；
@@ -33,13 +32,13 @@
 
 --①front指向队列第一个元素，初始值为0；
 
-  ②rear指向队列最后一个元素的后一个位置（作为预留空间，参考下图），初始值为0；
+   ②rear指向队列最后一个元素的后一个位置（作为预留空间，参考下图），初始值为0；
   
-  ③队列空：   rear==front
+   ③队列空：   rear==front
+   
+   ④队列满：   (rear+1)% maxSize ==front
   
-  ④队列满：   (rear+1)% maxSize ==front
-  
-  ⑤队列中有效数据的个数：(rear+maxSize-front)%maxSize
+   ⑤队列中有效数据的个数：(rear+maxSize-front)%maxSize
   
 
 --示意图：
