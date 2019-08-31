@@ -44,4 +44,4 @@
 
 --示意图：
 
-![Image text](https://github.com/wnhub/images/blob/master/readme/%E7%8E%AF%E5%BD%A2%E9%98%9F%E5%88%97.png）
+![Image text](https://raw.githubusercontent.com/wnhub/images/master/readme/%E7%8E%AF%E5%BD%A2%E9%98%9F%E5%88%97.png?token=AJNOIZ66BL4HV5RYIVRUFHC5NHUQK）
