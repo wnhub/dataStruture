@@ -35,6 +35,12 @@ public class SingleLinkedListDemo {
         singleLinkedList.delete(2);
         System.out.println("删除后的链表：");
         singleLinkedList.list();
+
+        System.out.println("链表的节点数量：" + SingleLinkedList.getLength());
+
+        int index = 2;
+        HeroNode res = SingleLinkedList.findLastIndexNode(index);
+        System.out.printf("倒数第%d个节点是%S", index, res);
     }
 }
 
@@ -42,7 +48,7 @@ public class SingleLinkedListDemo {
  * 定义SingleLinkedList,来管理我们的hero
  */
 class SingleLinkedList {
-    HeroNode head = new HeroNode(0, "", "");
+    static HeroNode head = new HeroNode(0, "", "");
 
     /**
      * 添加节点
@@ -155,6 +161,48 @@ class SingleLinkedList {
             System.out.printf("没有找到编号%d的节点,不能删除\n", no);
         }
     }
+
+    /**
+     * 获取链表中的节点数量
+     *
+     * @return
+     */
+    public static int getLength() {
+        if (head.next == null) {
+            return 0;
+        }
+        int length = 0;
+        HeroNode cur = head.next;
+        while (cur != null) {
+            length++;
+            cur = cur.next;
+        }
+        return length;
+    }
+
+    /**
+     * 新浪面试题
+     * 查找单链表的第index个节点
+     * @param index
+     * @return
+     */
+    public static HeroNode findLastIndexNode(int index) {
+        if (head.next == null) {
+            return null;
+        }
+        int size = getLength();
+        if (index <= 0 || index > size) {
+            return null;
+        }
+        //定义辅助变量，循环定位到倒数的index
+        HeroNode cur = head.next;
+        for (int i = 0; i < size - index; i++) {
+            cur = cur.next;
+        }
+        return cur;
+    }
+
+
 
 }
 
