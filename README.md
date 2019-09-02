@@ -42,7 +42,6 @@
   
 
 --示意图：
-
 ![image](https://github.com/wnhub/images/blob/master/readme/%E7%8E%AF%E5%BD%A2%E9%98%9F%E5%88%97.png)
 
 二、链表
@@ -59,21 +58,18 @@
 
 2、单链表（此处使用带头节点的链表）
 
-   2.1、头结点：①不存放任何数据
+   2.1、头结点：
+                
+               ①不存放任何数据
    
                ②表示单链表头next
    2.2、增加
-   
         2.2.1、在尾部直接添加
-        
         ![image](https://github.com/wnhub/images/blob/master/readme/%E5%8D%95%E9%93%BE%E8%A1%A8_%E5%9C%A8%E5%B0%BE%E9%83%A8%E6%B7%BB%E5%8A%A0.png)
-        
          2.2.2、按顺序添加
-        
         ![image](https://github.com/wnhub/images/blob/master/readme/%E5%8D%95%E9%93%BE%E8%A1%A8_%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%B7%BB%E5%8A%A0.png)
         
    2.3、删除
-        
         ![image](https://github.com/wnhub/images/blob/master/readme/%E5%8D%95%E9%93%BE%E8%A1%A8_%E5%88%A0%E9%99%A4.png)
         
    2.4、修改
