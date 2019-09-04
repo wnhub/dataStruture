@@ -86,3 +86,27 @@
         2）查找单链表中倒数第k个节点【新浪】
         3）单链表的反转【腾讯】
         4）从尾到头打印单链表【百度】
+            --【拓展】使用栈
+            ①代码：
+                 Stack<String> stack = new Stack<String>();
+                 //入栈
+                 stack.add("tom");
+                 stack.add("smith");
+                  stack.add("jack");
+                  //出栈
+                  while(stack.size()>0){
+                       System.out.println(stack.pop());
+                   }
+            ②add & push
+            共同点：
+                add，push都可以向stack中添加元素。
+            不同点：
+                add是继承自Vector的方法，且返回值类型是boolean。
+                push是Stack自身的方法，返回值类型是参数类类型。
+            ③peek & pop
+            共同点：
+                peek，pop都是返回栈顶元素。
+            不同点：
+                peek()函数返回栈顶的元素，但不弹出该栈顶元素。
+                pop()函数返回栈顶的元素，并且将该栈顶元素出栈。
+            
