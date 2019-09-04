@@ -110,3 +110,9 @@
                 peek()函数返回栈顶的元素，但不弹出该栈顶元素。
                 pop()函数返回栈顶的元素，并且将该栈顶元素出栈。
             
+   3.双向链表
+   
+     3.1 增删改查（思路）
+     
+  
+  ![image](https://github.com/wnhub/images/blob/master/readme/%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8.png)
