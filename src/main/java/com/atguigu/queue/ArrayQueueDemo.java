@@ -44,7 +44,6 @@ public class ArrayQueueDemo {
                         System.out.println("从队列中取出的数据是%d\n" + data);
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
-                        ;
                     }
                     break;
                 case 'h':
@@ -53,7 +52,6 @@ public class ArrayQueueDemo {
                         System.out.printf("队列的头数据是%d\n" ,headData);
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
-                        ;
                     }
                     break;
                 default:
