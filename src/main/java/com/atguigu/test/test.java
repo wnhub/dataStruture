@@ -1,5 +1,7 @@
 package com.atguigu.test;
 
+import org.junit.jupiter.api.Test;
+
 /**
  * ************************
  *
@@ -10,7 +12,8 @@ package com.atguigu.test;
  * ************************
  */
 public class test {
-    public static void main(String[] args) {
+    @Test
+    public void test1() {
         String str = "HelloWorld";
         StringBuffer buffer = new StringBuffer();
         for (int i = str.length() - 1; i >= 0; i--) {
@@ -25,6 +28,17 @@ public class test {
         }
         System.out.println();
         System.out.println(buffer.reverse());
+    }
+
+    @Test
+    public void test2() {
+        String ex = "3+21*3";
+        if (51 == ex.length() - 1) {
+            System.out.println("-------");
+        } else {
+            char ch = ex.substring(4, 6).charAt(0);
+            System.out.println("-" + ch + "_");
+        }
     }
 
 }
