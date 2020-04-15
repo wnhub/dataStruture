@@ -41,4 +41,12 @@ public class test {
         }
     }
 
+    @Test
+    public void test3() {
+        int i = 3;
+        int j = i;
+        j++;
+        System.out.println("j=" + j + ",i=" + i);
+    }
+
 }
