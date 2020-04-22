@@ -15,37 +15,35 @@ import java.util.List;
  */
 public class BinarySearch {
     public static void main(String[] args) {
-        int[] arr = {-1, -1, -1, -1, -1, 1, 9, 34, 89};
-        List<Integer> list = binarySearch1(arr, 0, arr.length, -1);
-        if (list.isEmpty()) {
-            System.out.println("没有找到");
-        } else {
-            System.out.println("目标元素下标是:" + list);
-        }
-
-//        int index = binarySearch(arr, 0, arr.length, -13);
-//        if (index == -1) {
+//        int[] arr = {-1, -1, -1, -1, -1, 1, 9, 34, 89};
+//        List<Integer> list = binarySearch1(arr, 0, arr.length, -1);
+//        if (list.isEmpty()) {
 //            System.out.println("没有找到");
 //        } else {
-//            System.out.printf("目标元素下标是%d", index);
+//            System.out.println("目标元素下标是:" + list);
 //        }
+        int[] arr = new int[100];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = i + 2;
+        }
+        int list = binarySearch(arr, 0, arr.length, 56);
+        System.out.println("目标元素下标是:" + list);
     }
 
     public static int binarySearch(int[] arr, int left, int right, int targetValue) {
-        if (left > right) {
+        System.out.println("hello~~~");
+        if (left > right || targetValue < arr[0] || targetValue > arr[arr.length - 1]) {
             return -1;
         }
-        int index = -1;
         int mid = (left + right) / 2;
         int midValue = arr[mid];
         if (targetValue > midValue) {
-            binarySearch(arr, mid + 1, right, targetValue);
+            return  binarySearch(arr, mid + 1, right, targetValue);
         } else if (targetValue < midValue) {
-            binarySearch(arr, left, mid - 1, targetValue);
+            return binarySearch(arr, left, mid - 1, targetValue);
         } else {
-            index = mid;
+            return mid;
         }
-        return index;
     }
 
     /**
@@ -65,9 +63,9 @@ public class BinarySearch {
         int mid = (left + right) / 2;
         int midValue = arr[mid];
         if (targetValue > midValue) {
-            binarySearch(arr, mid + 1, right, targetValue);
+            binarySearch1(arr, mid + 1, right, targetValue);
         } else if (targetValue < midValue) {
-            binarySearch(arr, left, mid - 1, targetValue);
+            binarySearch1(arr, left, mid - 1, targetValue);
         } else {
             int temp = mid - 1;
             while (temp > 0 && arr[temp] == targetValue) {
