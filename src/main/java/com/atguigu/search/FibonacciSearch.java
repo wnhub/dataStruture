@@ -7,6 +7,7 @@ import java.util.Arrays;
  * ************************
  *
  * @Description: 斐波那契（黄金分割法）查找
+ * mid = low + F[k - 1] - 1;-->F:斐波那契数列
  * @Author: wanghaining
  * @Date: 2020/4/22 15:52
  * <p>
@@ -72,10 +73,12 @@ public class FibonacciSearch {
         ArrayList<Integer> fibArray = new ArrayList<Integer>();
         //获取到斐波那契分割数值的下标
         while (high > fibo) {
+            //数列有F[k]-1个数，才能分成（F[k-1]-1）+（F[k-2]-1）+1
             fibo = getFibonacci(k) - 1;
             fibArray.add(fibo);
             k++;
         }
+        k--;
         //因为f[k]值可能大于a的长度，所以我们要利用Arrays工具类，构建一个新的数组，并指向a
         //不足的部分会用0补充
         int[] temp = Arrays.copyOf(arr, fibArray.get(k - 1));
@@ -87,7 +90,7 @@ public class FibonacciSearch {
         //使用while循环来处理，找到我们的数key
         //只要这个条件满足，就可以查找
         while (low <= high) {
-            mid = low + fibArray.get(k - 1 - 1) - 1;
+            mid = low + fibArray.get(k - 1) - 1;
             //向左查找
             if (keyValue < temp[mid]) {
                 high = mid - 1;
