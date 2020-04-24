@@ -21,8 +21,8 @@ public class InsertSort {
 //        for (int i = 0; i < arr.length; i++) {
 //            System.out.print(arr[i] + "\t");
 //        }
-        int arr[] = new int[80000];
-        for (int i = 0; i < 80000; i++) {
+        int arr[] = new int[800000];
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 800000);
         }
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss:SSS");
